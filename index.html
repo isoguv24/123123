@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Realistic Air Hockey Game</title>
+      <link rel="stylesheet" href="/src/style.css">
+    </head>
+    <body>
+      <div id="scoreboard">
+        <div>Player 1: <span id="player1Score">0</span></div>
+        <div>Player 2: <span id="player2Score">0</span></div>
+      </div>
+      <canvas id="gameCanvas" width="1000" height="500"></canvas>
+      <div id="menuScreen" class="active">
+        <h1>Air Hockey</h1>
+        <button id="singlePlayerButton">Single Player</button>
+        <button id="twoPlayerButton">Two Player</button>
+        <label for="winningScore">Winning Score:</label>
+        <select id="winningScore">
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      </div>
+      <div id="countdownScreen">3</div>
+      <div id="gameOverScreen">Game Over! Press Enter to Restart</div>
+      <script type="module" src="/src/main.js"></script>
+    </body>
+    </html>
